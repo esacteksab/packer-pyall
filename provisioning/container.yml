@@ -1,0 +1,17 @@
+---
+- hosts: all
+  tasks:
+    - apt_repository: repo='ppa:fkrull/deadsnakes'
+
+    - apt_repository: repo='ppa:pypy/ppa'
+
+    - apt: pkg={{item}} state=installed update_cache=yes
+      with_items:
+          - python2.6
+          - python3.1
+          - python3.2
+          - python3.4
+          - pypy
+          - build-essential
+
+
