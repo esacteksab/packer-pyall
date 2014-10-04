@@ -12,7 +12,7 @@ https://registry.hub.docker.com/u/esacteksab/pyall/
 * Install Packer
 * Install Docker
 * Make any changes to Packer file -- **Make sure you update Tag in ``docker-import``!!!
-* ``packer build docker-ubunt.json``
+* ``packer build docker-ubuntu.json``
 * ``docker push esacteksab/pyall:<version>``
 
 
@@ -38,7 +38,8 @@ Python 3.4.0
 root@b36681570b36:/# which python2
 /usr/bin/python2
 root@b36681570b36:/# python2 --version
-Python 2.7.6
-
-PyPy 2.4
+2.7.6
+pypy --version
+Python 2.7.8 (2.4.0+dfsg-1~ppa2+trusty, Sep 25 2014, 04:35:04)
+[PyPy 2.4.0 with GCC 4.8.2]
 ```
