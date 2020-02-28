@@ -10,11 +10,11 @@
 	{
 		"type": "shell",
 		"inline": [
-			"sudo apt-get update",
-			"sudo apt-get install software-properties-common python-apt python-pycurl python-pip python-virtualenv -y",
-			"sudo apt-add-repository ppa:ansible/ansible -y",
-			"sudo apt-get update update",
-			"sudo apt-get install ansible -y"
+			"apt-get update",
+			"apt-get install software-properties-common python-apt python-pycurl python-pip python-virtualenv -y",
+			"apt-add-repository ppa:ansible/ansible -y",
+			"apt-get update",
+			"apt-get install ansible -y"
 			]
 	},
 	{
@@ -27,7 +27,7 @@
 	{
 		"type": "docker-tag",
 		"repository": "esacteksab/pyall",
-		"tag": "0.9"
+		"tag": "0.17"
 	}
 	]
 ]
